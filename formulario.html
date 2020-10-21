@@ -10,11 +10,18 @@
 <body>
     <form class = "formulario">
 
-		<h1>Registrate</h1>
-		<section class="formulario">
-            <input class ="usuario" type = "text" name :"nombres" id = "nombres"placeholder = "Nombre Completo">
-            <input class = "usuario" type = "email" name :"correo" id = "correo"placeholder = "Correo electronico">
-            <input type"submit" value="Registro">
+		<section class="formulario-registro">
+            <h1>Formulario Registro</h1>
+
+            <div></div><input class ="usuario" type = "text" name :"nombres" id = "nombres"placeholder = "Nombre Completo" required></div>
+            <div><input class = "usuario" type = "email" name :"correo" id = "correo"placeholder = "Correo electronico" required></div>
+            
+            <a><input class = "opcion" type="radio" name: "registro" value="DNI" required> DNI </a>
+            <div><input class = "usuario" type = "text" placeholder = "Ingrese DNI"></div>
+            <a><input class = "opcion" type="radio" name: "registro" value="RUT" required> Rut </a>
+            <div><input class = "usuario" type = "text" placeholder = "Ingrese Rut"></div>
+            
+            <div><input class = "usuario" type="submit" value="Registrarse"></div>
         </section>
 			 
     </form>
